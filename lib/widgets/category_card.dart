@@ -29,6 +29,8 @@ class CategoryCard extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(10),
           ),
+          height: 90,
+          width: 160,
           child: Center(
             child: Text(
               category.name,
@@ -39,8 +41,6 @@ class CategoryCard extends StatelessWidget {
               ),
             ),
           ),
-          height: 90,
-          width: 160,
         ),
       ),
     );

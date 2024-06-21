@@ -16,26 +16,26 @@ class NewsPost extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.cover,
             )),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
         Text(
           article.title,
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
         Text(
           article.subtitle??"",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 14,
             color: Colors.grey,
