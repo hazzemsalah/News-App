@@ -25,12 +25,12 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
         if (snapshot.hasData) {
           return NewsPostListView(articles: snapshot.data!);
         } else if (snapshot.hasError) {
-          return SliverFillRemaining(
+          return const SliverFillRemaining(
             hasScrollBody: false,
             child: Center(child: Text("oops there is an Erorr , Try later ..")),
           );
         } else {
-          return SliverFillRemaining(
+          return const SliverFillRemaining(
             hasScrollBody: false,
             child: Center(
               child: CircularProgressIndicator(),
